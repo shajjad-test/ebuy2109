@@ -1,0 +1,20 @@
+@import 'variable.scss';
+
+@mixin trans($time) {
+    transition: all linear $time;
+    -o-transition: all linear $time;
+    -ms-transition: all linear $time;
+    -moz-transition: all linear $time;
+    -webkit-transition: all linear $time;
+}
+
+@mixin details {
+    font-family: $ff2;
+    font-weight: 400;
+    font-size: 14px;
+    color: $hbg;
+}
+
+@mixin  nocopy {
+        
+}

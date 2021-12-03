@@ -1,0 +1,70 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+header{
+    background: $hbg;
+    .header-left{
+        ul{
+            li{
+                &:first-child{
+                    padding-left: 0;
+                }
+
+                button{
+                    @include trans(0.4s);
+                }
+
+                &:hover{
+                    button{
+                        color: $brand !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-right{
+        ul{
+            li{
+                a{
+                    i{
+                        margin-right: 4px;
+                    }
+                }
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+        }    
+    }
+    
+    ul{
+        li{
+            line-height: 50px;
+            border-right:1px solid #fff;
+            padding-left: 20px;
+            padding-right: 20px;
+            @include details;
+            font-size: 13px;
+            
+            a{
+                @include trans(0.4s);
+            }
+
+            &:last-child{
+                border-right: none;
+            }
+
+            &:hover{
+                a{
+                    color: $brand !important;
+                }
+            
+            }
+        }
+    }
+}
+
+/* ======================
+    header css ends
+====================== */ 

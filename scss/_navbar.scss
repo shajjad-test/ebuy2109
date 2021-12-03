@@ -1,0 +1,74 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+
+.navbar{
+    .navbar-brand{
+
+    }
+
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                font-family: $ff1;
+                font-weight: 500;
+                font-size: 16px;
+                color: $dark;
+                line-height: 110px;
+                padding: 0 10px !important;
+                position: relative;
+                @include trans(0.4s);
+                &::before{
+                    content: '';
+                    width: 0px;
+                    height: 1px;
+                    background: $brand;
+                    position: absolute;
+                    left: 10px;
+                    bottom: 38px;
+                    @include trans(0.4s);
+                }
+                &::after{
+                    content: '';
+                    width: 0px;
+                    height: 1px;
+                    background: $brand;
+                    position: absolute;
+                    left: 10px;
+                    bottom: 35px;
+                    @include trans(0.4s);
+                }
+
+                &:hover{
+                    color: $brand;
+                    &::before{
+                        width: 23px;
+                    }
+                    &::after{
+                        width: 11px;
+                    }
+                }
+            }
+            .active{
+                color: $brand;
+                &::before{
+                    width: 23px;
+                }
+                &::after{
+                    width: 11px;
+                }
+            }
+        }
+    }
+
+    form{
+
+    }
+
+    .cart-info{
+
+    }
+}
+/* =======================
+    navbar css ends
+========================= */ 

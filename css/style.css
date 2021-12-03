@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ======================
+    common css ends
+======================= */
+header {
+  background: #444444;
+}
+header .header-left ul li:first-child {
+  padding-left: 0;
+}
+header .header-left ul li button {
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+header .header-left ul li:hover button {
+  color: #de4644 !important;
+}
+header .header-right ul li a i {
+  margin-right: 4px;
+}
+header .header-right ul li:last-child {
+  padding-right: 0;
+}
+header ul li {
+  line-height: 50px;
+  border-right: 1px solid #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+  font-size: 13px;
+}
+header ul li a {
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+header ul li:last-child {
+  border-right: none;
+}
+header ul li:hover a {
+  color: #de4644 !important;
+}
+
+/* ======================
+    header css ends
+====================== */
+.navbar .navbar-nav .nav-item .nav-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222222;
+  line-height: 110px;
+  padding: 0 10px !important;
+  position: relative;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+.navbar .navbar-nav .nav-item .nav-link::before {
+  content: '';
+  width: 0px;
+  height: 1px;
+  background: #de4644;
+  position: absolute;
+  left: 10px;
+  bottom: 38px;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+.navbar .navbar-nav .nav-item .nav-link::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  background: #de4644;
+  position: absolute;
+  left: 10px;
+  bottom: 35px;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #de4644;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover::before {
+  width: 23px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover::after {
+  width: 11px;
+}
+.navbar .navbar-nav .nav-item .active {
+  color: #de4644;
+}
+.navbar .navbar-nav .nav-item .active::before {
+  width: 23px;
+}
+.navbar .navbar-nav .nav-item .active::after {
+  width: 11px;
+}
+
+/* =======================
+    navbar css ends
+========================= */

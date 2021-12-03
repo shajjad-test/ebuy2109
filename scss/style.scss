@@ -1,0 +1,24 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+}
+
+/* ======================
+    common css ends
+======================= */ 
+@import '_header.scss';
+@import '_navbar.scss';
+
